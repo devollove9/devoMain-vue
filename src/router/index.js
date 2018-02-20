@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
+import RouteHandler from '@/library/routeHandler'
+
 import Home from '@/components/Home/Home.vue'
 import Contact from '@/components/Contact/Contact.vue'
 import SignUp from '@/components/SignUp/SignUp.vue'
@@ -8,7 +11,7 @@ import NotFound from '@/components/NotFound/NotFound.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   routes: [
 
@@ -21,3 +24,7 @@ export default new Router({
     { path: '*', name: 'notfound', component: NotFound }
   ]
 })
+
+RouteHandler.use(router)
+
+export default router

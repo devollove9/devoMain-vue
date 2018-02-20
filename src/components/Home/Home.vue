@@ -1,6 +1,5 @@
 <template>
   <div
-    id="home"
     class="home">
     This is Home view
   </div>
@@ -13,6 +12,9 @@ export default {
 </script>
 
 <style lang="scss">
-
+.home{
+  margin: 0 auto;
+  max-width: 62.4375em;
+}
 
 </style>

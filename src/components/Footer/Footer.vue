@@ -13,6 +13,9 @@ export default {
 </script>
 
 <style lang="scss">
-
+.footer{
+  margin: 0 auto;
+  max-width: 62.4375em;
+}
 
 </style>
